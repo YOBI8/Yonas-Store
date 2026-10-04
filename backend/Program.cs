@@ -106,7 +106,7 @@ builder.Services.AddCors(options =>
     var normalizedOrigins = allowedOrigins
         .Where(origin => !string.IsNullOrWhiteSpace(origin))
         .Select(origin => origin.Trim().TrimEnd('/'))
-        .Append("https://my-first-pr-2.vercel.app")
+        .Append("https://yonas-store.vercel.app/")
         .Distinct(StringComparer.OrdinalIgnoreCase)
         .ToArray();
 
