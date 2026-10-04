@@ -11,7 +11,7 @@ import type {
 } from '../types';
 
 const configuredApiOrigin = (import.meta.env.VITE_API_BASE_URL ?? '').trim().replace(/\/$/, '');
-const productionApiOrigin = 'https://myfirstpr.onrender.com';
+const productionApiOrigin = 'https://yonas-store.onrender.com';
 const apiOrigin = configuredApiOrigin || (import.meta.env.PROD ? productionApiOrigin : '');
 const localApiOrigin = `${window.location.protocol}//${window.location.hostname}:5000`;
 
